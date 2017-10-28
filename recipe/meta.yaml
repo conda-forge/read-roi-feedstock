@@ -1,6 +1,6 @@
 {% set name = "read-roi" %}
-{% set version = "1.3.0" %}
-{% set sha256 = "596c5273e372f37e43a0bff0fbc0d06c2a884258911334d72378df8e9bccf4ca" %}
+{% set version = "1.3.2" %}
+{% set sha256 = "1a87bccca9ea389ff35a4af126203826e59f63148efe8b68e91d1993f3d4867c" %}
 
 package:
   name: {{ name|lower }}
