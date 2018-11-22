@@ -1,6 +1,6 @@
 {% set name = "read-roi" %}
-{% set version = "1.4.2" %}
-{% set sha256 = "9f798dddd2e4f06a518f158007e02019ce44baebccd0372f281d24db454d4846" %}
+{% set version = "1.4.6" %}
+{% set sha256 = "0f85b031bb1c659b4f283f7cfda17e945eb685bdb923b3372d2f3cf83bf1beca" %}
 
 package:
   name: {{ name|lower }}
@@ -12,13 +12,14 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 0
+  script: "{{ PYTHON }} -m pip install . -vvv  --no-deps"
   skip: True  # [py2k]
 
 requirements:
   build:
     - python
+    - pip
     - setuptools
 
   run:
