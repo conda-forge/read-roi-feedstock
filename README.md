@@ -14,9 +14,8 @@ Summary: Read ROI files .zip or .roi generated with ImageJ.
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/read-roi-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/read-roi-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/read-roi-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/read-roi-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/read-roi-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/read-roi-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/read-roi-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/read-roi-feedstock)
 
 Current release info
 ====================

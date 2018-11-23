@@ -1,29 +1,27 @@
 {% set name = "read-roi" %}
-{% set version = "1.4.6" %}
-{% set sha256 = "0f85b031bb1c659b4f283f7cfda17e945eb685bdb923b3372d2f3cf83bf1beca" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: bb451b4ad4e20e1ac83c30f64dcea97afdb7508b10dd4d0e9682f7e8b79f57c0
 
 build:
+  noarch: python
   number: 0
   script: "{{ PYTHON }} -m pip install . -vvv  --no-deps"
-  skip: True  # [py2k]
 
 requirements:
-  build:
-    - python
+  host:
+    - python >=3
     - pip
     - setuptools
 
   run:
-    - python
+    - python >=3
 
 test:
   commands:
