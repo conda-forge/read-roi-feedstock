@@ -1,6 +1,5 @@
 {% set name = "read-roi" %}
 {% set version = "1.5.0" %}
-{% set sha256 = "bb451b4ad4e20e1ac83c30f64dcea97afdb7508b10dd4d0e9682f7e8b79f57c0" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: bb451b4ad4e20e1ac83c30f64dcea97afdb7508b10dd4d0e9682f7e8b79f57c0
 
 build:
   number: 0
