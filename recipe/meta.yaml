@@ -1,5 +1,5 @@
 {% set name = "read-roi" %}
-{% set version = "1.5.1" %}
+{% set version = "1.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8c803a4017f8fe089916620396c66148f51fa83772fbf16384120f28e2957e20
+  sha256: d3ee7eef699428534a1eebd0fce3896ceaf408630ab72bfcc796ae9c88042cbd
 
 build:
   noarch: python
