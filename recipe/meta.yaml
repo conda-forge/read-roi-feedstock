@@ -33,7 +33,7 @@ test:
 
 about:
   home: https://github.com/hadim/read_roi/
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: Read ROI files .zip or .roi generated with ImageJ.
   license_family: BSD
