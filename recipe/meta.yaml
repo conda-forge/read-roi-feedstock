@@ -1,5 +1,5 @@
 {% set name = "read-roi" %}
-{% set version = "1.5.2" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d3ee7eef699428534a1eebd0fce3896ceaf408630ab72bfcc796ae9c88042cbd
+  sha256: 70aa222f348c300eead6318dc4ae3a72548bcde0ff352cca3742b527fde7565c
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vvv  --no-deps"
+  script: {{ PYTHON }} -m pip install . -vvv  --no-deps
 
 requirements:
   host:
@@ -35,7 +35,7 @@ about:
   home: https://github.com/hadim/read_roi/
   license: BSD 3-Clause
   license_file: LICENSE
-  summary: 'Read ROI files .zip or .roi generated with ImageJ.'
+  summary: Read ROI files .zip or .roi generated with ImageJ.
   license_family: BSD
 
 extra:
